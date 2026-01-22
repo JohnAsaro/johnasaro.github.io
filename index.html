@@ -46,7 +46,7 @@ of which I am a part of. Hopefully you are interested in some of my work, includ
                 <h2>Research</h2>
                 <p>
               My research is heavily focused on developing AI agents to solve problems.
-              These problems include completing tasks or optimizing towards a goal, for example training agents to play the games XPilot, DOOM, and Ikemen-GO, and using evolutionary algorithms to generate hexapod gaits.
+              These problems include completing tasks or optimizing towards a goal, for example training agents to play the games XPilot, <a href="https://github.com/JohnAsaro/DOOM-bots">DOOM</a>, and Ikemen-GO, and using evolutionary algorithms to generate hexapod gaits.
               In the past, I have also worked with <a href="https://christinechung.digital.conncoll.edu/">Dr. Christine Chung</a> in the field of computational social choice. 
                 </p>
               </td>
@@ -54,54 +54,214 @@ of which I am a part of. Hopefully you are interested in some of my work, includ
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+<tr>
+  <td colspan="2" style="padding:16px;width:100%;text-align:center;">
+    <h2>Published Research</h2>
+  </td>
+</tr>
 
 <tr onmouseout="core_stop()" onmouseover="core_start()">
       <td style="padding:16px;width:20%;vertical-align:middle">
         <div class="one">
-          <div class="two" id='nexf_image'>
-					  <img src='images/core1.jpg' width=100%>
+          <div class="two" id='core_img'>
+					  <img src='images/core2.jpg' width=100%>
 					</div>
-          <img src='images/core2.jpg' width=100%>
+          <img src='images/core1.jpg' width=100%>
         </div>
         <script type="text/javascript">
           function core_start() {
-            document.getElementById('nexf_image').style.opacity = "1";
+            document.getElementById('core_img').style.opacity = "1";
           }
 
           function core_stop() {
-            document.getElementById('nexf_image').style.opacity = "0";
+            document.getElementById('core_img').style.opacity = "0";
           }
           core_stop()
         </script>
       </td>
       <td style="padding:8px;width:80%;vertical-align:middle">
-        <a href="https://m-niemeyer.github.io/nexf/">
           <span class="papertitle">Niching Agents in the Core</span>
         </a>
         <br>
         <a href="https://oak.conncoll.edu/parker/">Gary B. Parker</a>,
         <a href="https://oconnor.digital.conncoll.edu/">Jim O'Connor</a>,
-        <strong>John Asaro</strong>,
+        <strong>John Asaro</strong>
         <br>
-        <em>ECTA</em>, 2025
+        <em>17th International Conference on Evolutionary Computation Theory and Applications</em>, 2025
         <br>
         <a href="https://github.com/ConnAALL/core-niching">Project Page</a>
         /
         <a href="https://www.researchgate.net/publication/393960007_Niching_Agents_in_The_Core">ResearchGate</a>
         <p></p>
         <p>
-The Core is a unique competitive co-evolution algorithm that
-allows agents to evolve autonomous control without utilizing a traditional
-ﬁtness function. The agents evolve via local interactions through tour-
-nament selection, crossover, and mutation, producing oﬀspring by evolv-
-ing better controllers. Previous works have shown The Core’s ability to
-evolve agents capable of combat and navigation in the Xpilot video game.
-This research expands upon that premise by niching agents to speciﬁc
-subsets of the original environment The Core was tested in. Our results
-demonstrate the niched agents capacity for success over agents niched to
-the entire system and agents niched to diﬀerent sub-environments.        </p>
+        <strong>Abstract:</strong> The Core is a unique competitive co-evolution algorithm that allows agents to evolve autonomous control without utilizing a traditional fitness function. The agents evolve via local interactions through tournament selection, crossover, and mutation, producing offspring by evolving better controllers. Previous works have shown The Core's ability to evolve agents capable of combat and navigation in the Xpilot video game. This research expands upon that premise by niching agents to specific subsets of the original environment The Core was tested in. Our results demonstrate the niched agents capacity for success over agents niched to the entire system and agents niched to different sub-environments.
+       </p>
       </td>
     </tr>
+
+
+<tr onmouseout="hexa_stop()" onmouseover="hexa_start()">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='hexa_img'>
+					  <img src='images/hexa2.png' width=100%>
+					</div>
+          <img src='images/hexa1.png' width=100%>
+        </div>
+        <script type="text/javascript">
+          function hexa_start() {
+            document.getElementById('hexa_img').style.opacity = "1";
+          }
+
+          function hexa_stop() {
+            document.getElementById('hexa_img').style.opacity = "0";
+          }
+          hexa_stop()
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+          <span class="papertitle">Decentralized Evolution of Hexapod Gaits with Independent Leg Controllers</span>
+        </a>
+        <br>
+        <a href="https://oak.conncoll.edu/parker/">Gary B. Parker</a>,
+        <strong>John Asaro</strong>,
+        <a href="https://oconnor.digital.conncoll.edu/">Jim O'Connor</a>
+        <br>
+        <em>17th International Conference on Evolutionary Computation Theory and Applications</em>, 2025
+        <br>
+        <a href="https://github.com/JohnAsaro/Learning-Isolated-Individual-Leg-Control-on-a-Hexapod">Project Page</a>
+        /
+        <a href="https://www.researchgate.net/publication/393964860_Decentralized_Evolution_of_Hexapod_Gaits_with_Independent_Leg_Controllers">ResearchGate</a>
+        <p></p>
+        <p>
+        <strong>Winner of ECTA 2025 best poster award!</strong>
+      </p>
+        <p>
+        <strong>Abstract:</strong> This paper presents a novel approach to hexapod locomotion by evolving each leg's gait independently through a decentralized evolutionary algorithm. Using the Webots simulator and the Mantis hexapod robot, we optimize individual leg controllers without centralized coordination, allowing emergent behaviors to drive the development of efficient, coordinated locomotion. Our decentralized method is benchmarked against cooperative coevolution, demonstrating improved efficacy in generating stable and adaptive gaits while showing interesting emergent coordination. By enabling independent evolution of leg controllers, this method reduces the complexity of gait optimization and highlights the potential of decentralized strategies for scalable and adaptive robotic systems.
+      </p>
+      </td>
+    </tr>
+
+<tr>
+  <td colspan="2" style="padding:16px;width:100%;text-align:center;">
+    <h2>Unpublished Research</h2>
+  </td>
+</tr>
+
+<tr onmouseout="condor_stop()" onmouseover="condor_start()">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='condor_img'>
+					  <img src='images/condorcet2.jpg' width=100%>
+					</div>
+          <img src='images/condorcet1.jpg' width=100%>
+        </div>
+        <script type="text/javascript">
+          function condor_start() {
+            document.getElementById('condor_img').style.opacity = "1";
+          }
+
+          function condor_stop() {
+            document.getElementById('condor_img').style.opacity = "0";
+          }
+          condor_stop()
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+          <span class="papertitle">The Merits of a Voting Rule Based on θ-Winning Sets</span>
+        </a>
+        <br>
+        <strong>John Asaro</strong>,
+        <a href="https://christinechung.digital.conncoll.edu/">Christine Chung</a>
+        <br>
+        <em>Summer Science Research Institute (SSRI) colloquium</em>, 2024
+        <br>
+        <a href="https://github.com/JohnAsaro/Greatest-Theta-Winning-Set">Project Page</a>
+        /
+        <a href="https://www.researchgate.net/publication/393964498_The_Merits_of_a_Voting_Rule_Based_on_th-Winning_Sets">ResearchGate (Poster)</a>
+        <p></p>
+        <p>
+      </p>
+        <p>
+        <strong>Description:</strong> Research done in collaboration with Dr.Christine Chung on developing a voting rule (essentially an algorithm that will decide the outcome of an election) that produces the socially optimal outcome for a group in both single and multiwinner elections. Through empirical testing we found that our voting rule produces the socially optimal outcome more often than all other well known voting rules we tested against. Done as part of the 2024 Summer Science Research Institute (SSRI) program at Connecticut College and presented at the SSRI colloquium as a culmination of the research done.
+      </p>
+      </td>
+    </tr>
+
+<tr onmouseout="predprey_stop()" onmouseover="prepprey_start()">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='pp_image'>
+					  <img src='images/pp2.png' width=100%>
+					</div>
+          <img src='images/pp1.png' width=100%>
+        </div>
+        <script type="text/javascript">
+          function prepprey_start() {
+            document.getElementById('pp_image').style.opacity = "1";
+          }
+
+          function predprey_stop() {
+            document.getElementById('pp_image').style.opacity = "0";
+          }
+          predprey_stop()
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+          <span class="papertitle">Predator Prey Decentralized Cooperative Coevolution</span>
+        </a>
+      <br>
+        <a href="https://oak.conncoll.edu/parker/">Gary B. Parker</a>,
+        <strong>John Asaro</strong>,
+        <a href="https://oconnor.digital.conncoll.edu/">Jim O'Connor</a>
+        <br>
+        <a href="https://github.com/ConnAALL/predator-prey-DCC">Project Page</a>
+        <p>Predator Prey Decentralized Cooperative Coevolution is an extension of the previous research done by in Decentralized Evolution of Hexapod Gaits with Independent Leg Controllers. We have successfully extended this work to a 2D Predator Prey Scenario, and intend to use this environment for further research using the Decentralized Cooperative Coevolution method.
+      </td>
+    </tr>
+
+<tr>
+  <td colspan="2" style="padding:16px;width:100%;text-align:center;">
+    <h2>Projects</h2>
+  </td>
+</tr>
+
+<tr onmouseout="ike_stop()" onmouseover="ike_start()">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='ike_image'>
+					  <img src='images/ike2.jpg' width=100%>
+					</div>
+          <img src='images/ike1.jpg' width=100%>
+        </div>
+        <script type="text/javascript">
+          function ike_start() {
+            document.getElementById('ike_image').style.opacity = "1";
+          }
+
+          function ike_stop() {
+            document.getElementById('ike_image').style.opacity = "0";
+          }
+          ike_stop()
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+          <span class="papertitle">Viz Ikemen</span>
+        </a>
+        <br>
+        <strong>John Asaro</strong>       
+        <br>
+        <a href="https://github.com/JohnAsaro/viz-ikemen">Project Page</a>
+        <p>
+        <strong>Description:</strong> Viz Ikemen is a game AI enviornment that can be used to train bots to play the game Ikemen GO entirely with visual information. Ikemen GO is an open source fighting game built in the GO programming language. Viz Ikemen uses the games "VS" mode as an enviornment to train an agent learner to battle the CPU opponents that exist in Ikemen GO.
+      </p>
+        <p>
+      <strong>Note:</strong> This was originally developed as a tool for the Autonomous Agent Learning Lab, but later become more of a personal passion project as this environments' similarity to DareFightingICE limits its publishability. 
+         That being said, the Viz Ikemen enviornment is effectively finished and works exactly as described. However it likely will not be expanded upon aside from me cleaning up the documentation eventually so that anyone can use it easily and packaging it, 
+         which has been on my todo list since October of 2025.
+      </td>
+    </tr>
+
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
